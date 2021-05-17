@@ -1,0 +1,179 @@
+<mat-sidenav-container>
+    <mat-sidenav #sidenav [(opened)]="opened" position="end">
+        <div class="sidebar-content">
+            <h3><span (click)="sidenav.close()"><i class="ti-close"></i></span> Add New Card</h3>
+            <img class="img-fluid" src="../../assets/images/Credit Card.png" alt="">
+            <div class="card-form">
+                <form action="">
+                    <div class="form-group">
+                        <input type="text" class="form-control" placeholder="Enter card number">
+                    </div>
+                    <div class="form-group">
+                        <input type="text" class="form-control" placeholder="Enter card holder's name">
+                    </div>
+                    <div class="row ">
+                        <div class="col-6">
+                            <div class="form-group">
+                                <input type="date" class="form-control" >
+                            </div>
+                        </div>
+                        <div class="col-6">
+                            <div class="form-group">
+                                <input type="text" class="form-control" placeholder="Enter code" >
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="form-group d-flex align-items-center">
+                        <input type="checkbox"> <span>Securely save card details</span>
+                    </div>
+                    <div class="mar-top-30">
+                        <button type="button" routerLink="/complete" class="paybtn btn btn-100">PAY Rs3,440</button>
+                    </div>
+                    <div class="bottom-img payment-box-content">
+                        <ul>
+                            <li><span> We Accept:</span></li>
+                            <li><img src="../../assets/images/payment-icon/visa.svg" alt=""></li>
+                            <li><img src="../../assets/images/payment-icon/rupay.svg" alt=""></li>
+                            <li><img src="../../assets/images/payment-icon/master.png" alt=""></li>
+                            <li><img src="../../assets/images/payment-icon/american.svg" alt=""></li>
+                        </ul>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </mat-sidenav>
+    <mat-sidenav-content>
+        <app-header></app-header>
+        <div class="payment-area">
+            <div class="container">
+                <div class="row justify-content-center">
+                    <div class="col-lg-8">
+                        <div class="payment-box">
+                            <div class="row no-gutters">
+                                <div class="col-md-5">
+                                    <div class="payment-link">
+                                        <h4>Payment Method</h4>
+                                        <div class="nav flex-column nav-pills" id="v-pills-tab" role="tablist" aria-orientation="vertical">
+                                            <a class="nav-link active" id="v-pills-credit-tab" data-toggle="pill" href="#v-pills-credit" role="tab" aria-controls="v-pills-credit" aria-selected="true"><img src="../../assets/images/credit-card.svg" alt="">Credit/Debit Cards</a>
+                                            <a class="nav-link" id="v-pills-paypal-tab" data-toggle="pill" href="#v-pills-paypal" role="tab" aria-controls="v-pills-paypal" aria-selected="false"><img src="../../assets/images/PayPal_Logo_Icon_2014.svg" alt="">Paypal</a>
+                                            <a class="nav-link" id="v-pills-messages-tab" data-toggle="pill" href="#v-pills-net-banking" role="tab" aria-controls="v-pills-net-banking" aria-selected="false"><img src="../../assets/images/museum.svg" alt="">Banking</a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-7">
+                                    <div class="tab-content" id="v-pills-tabContent">
+                                        <div class="tab-pane fade show active" id="v-pills-credit" role="tabpanel" aria-labelledby="v-pills-credit-tab">
+                                            <div class="payment-box-content">
+                                                <ul>
+                                                    <li><span> We Accept:</span></li>
+                                                    <li><img src="../../assets/images/payment-icon/visa.svg" alt=""></li>
+                                                    <li><img src="../../assets/images/payment-icon/rupay.svg" alt=""></li>
+                                                    <li><img src="../../assets/images/payment-icon/master.png" alt=""></li>
+                                                    <li><img src="../../assets/images/payment-icon/american.svg" alt=""></li>
+                                                </ul>
+                                                <div class="payment-card-box">
+                                                    <div class="row mb-3 no-gutters">
+                                                        <div class="col-3 col-sm-2">
+                                                            <img src="../../assets/images/payment-icon/visa-white.svg" alt="">
+                                                        </div>
+                                                        <div class="col-9 col-sm-10">
+                                                            <div class="payment-card-content">
+                                                                <p>Debit Card</p>
+                                                                <h4>4280-XXXXXXXX-3315</h4>
+                                                                <p>Valid TILL: 01/23</p>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="payment-bottom-button d-flex align-items-center">
+                                                        <div class="col-4 pl-0">
+                                                            <mat-form-field appearance="outline" >
+                                                                <mat-label>Enter CVV</mat-label>
+                                                                <input matInput type="text" placeholder="Enter CVV">
+                                                            </mat-form-field>
+                                                        </div>
+                                                        
+                                                        <!-- <input type="text" class="cv-input" placeholder="Enter CVV"> -->
+                                                        <button type="button" class="paybtn btn">PAY Rs3,440</button>
+                                                    </div>
+                                                </div>
+                                                <div class="payment-card-box">
+                                                    <div class="row mb-3 no-gutters">
+                                                        <div class="col-3 col-sm-2">
+                                                            <img src="../../assets/images/payment-icon/rupay-white.svg" alt="">
+                                                        </div>
+                                                        <div class="col-9 col-sm-10">
+                                                            <div class="payment-card-content">
+                                                                <p>Debit Card</p>
+                                                                <h4>4280-XXXXXXXX-3315</h4>
+                                                                <p>Valid TILL: 01/23</p>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="payment-bottom-button d-flex align-items-center">
+                                                        <div class="col-4 pl-0">
+                                                            <mat-form-field appearance="outline" >
+                                                                <mat-label>Enter CVV</mat-label>
+                                                                <input matInput type="text" placeholder="Enter CVV">
+                                                            </mat-form-field>
+                                                        </div>
+                                                        <button type="button" class="paybtn btn">PAY Rs3,440</button>
+                                                    </div>
+                                                </div>
+                                                <div class="add-card">
+                                                    <button class="add-card-btn btn" (click)="opened=!opened">Add New Card</button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="tab-pane fade" id="v-pills-paypal" role="tabpanel" aria-labelledby="v-pills-paypal-tab">
+                                            <div class="payment-box-content">
+                                                <div class="payment-card-box paypal-content">
+                                                    <img src="../../assets/images/payment-icon/PayPal.svg" alt="">
+                                                    <p>After clicking the pay button, you will be redirected to PayPal payment gateway to complete your payment.</p>
+                                                    <button type="button" class="paybtn btn">PAY Rs3,440</button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="tab-pane fade" id="v-pills-net-banking" role="tabpanel" aria-labelledby="v-pills-net-banking-tab">
+                                            <div class="payment-box-content net-banking-content">
+                                                <h5>Top Banks</h5>
+                                                <div class="top-bank">
+                                                    <ul>
+                                                        <li><img src="../../assets/images/top-bank-mini/axis.png" alt=""> <h6>Axis</h6></li>
+                                                        <li><img src="../../assets/images/top-bank-mini/hdfc.png" alt=""> <h6>HDFC</h6></li>
+                                                        <li><img src="../../assets/images/top-bank-mini/icici.png" alt=""> <h6>ICICI</h6></li>
+                                                        <li><img src="../../assets/images/top-bank-mini/kotak.png" alt=""> <h6>Kotak</h6></li>
+                                                        <li><img src="../../assets/images/top-bank-mini/sbi.png" alt=""> <h6>Sbi</h6></li>
+                                                    </ul>
+                                                </div>
+                                                <h5>Other Banks</h5>
+                                                <div class="bank-list-box">
+                                                    <ul>
+                                                        <li><a href="#">Allahabad Bank </a><i class="fa fa-angle-right"></i></li>
+                                                        <li><a href="#">Andhra Bank </a><i class="fa fa-angle-right"></i></li>
+                                                        <li><a href="#">Bank of Bahrain and Kuwait </a><i class="fa fa-angle-right"></i></li>
+                                                        <li><a href="#">Bank of Baroda </a><i class="fa fa-angle-right"></i></li>
+                                                        <li><a href="#">Bank of Baroda Corporate </a><i class="fa fa-angle-right"></i></li>
+                                                        <li><a href="#">Bank of India </a><i class="fa fa-angle-right"></i></li>
+                                                        <li><a href="#">Bank of Maharashtra </a><i class="fa fa-angle-right"></i></li>
+                                                        <li><a href="#">Canara Bank </a><i class="fa fa-angle-right"></i></li>
+                                                    </ul>
+                                                </div>
+                                                <button type="button" routerLink="/complete" class="paybtn btn btn-100">PAY Rs3,440</button>
+                                            </div>
+                                        </div>
+                                      </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <app-footer></app-footer>
+    </mat-sidenav-content>
+</mat-sidenav-container>
+
+
+
+

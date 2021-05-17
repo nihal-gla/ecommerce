@@ -1,0 +1,54 @@
+.term-content{
+    margin-top:100px;
+    padding:60px 0px;
+}
+.terms-header h2{
+    margin:0;
+    font-size: 40px;
+    font-weight: 700;
+    line-height: 40px;
+}
+.terms-header span{
+    font-size:20px;
+    opacity: 0.4;
+}
+.terms-header{
+    margin-bottom:50px;
+}
+.term-para p{
+    font-size:20px;
+    margin-bottom:30px;
+}
+@media(max-width:992px){
+    .term-content{
+        padding:40px 0px;
+    }
+    .terms-header{
+        margin-bottom:30px;
+    }
+    .terms-header h2{
+        font-size:30px;
+    }
+    .terms-header span{
+        font-size:16px;
+    }
+    .term-para p{
+        font-size:16px;
+        margin-bottom:20px;
+    }
+}
+@media(max-width:480px){
+    .terms-header{
+        margin-bottom:20px;
+    }
+    .terms-header h2{
+        font-size:25px;
+    }
+    .terms-header span{
+        font-size:14px;
+    }
+    .term-para p{
+        font-size:14px;
+        margin-bottom:15px;
+    }
+}

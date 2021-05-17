@@ -1,0 +1,116 @@
+.login-area{
+    padding: 100px 0px;
+}
+.login-content{
+    position: relative;
+}
+.login-form{
+    padding:30px 64px;
+    box-shadow: 0px 5px 30px #0000000D;
+    border-radius: 10px;
+    background-color:#fff;
+    z-index:1;
+    position: relative;
+}
+.login-box{
+    position: relative;
+}
+.login-img01{
+    position: absolute;
+    top: 25%;
+    right: -23%;
+    width: 210px;
+    opacity: 0.5;
+}
+.login-img02{
+    position: absolute;
+    bottom: -18%;
+    left: -23%;
+    width: 210px;
+    opacity: 0.5;
+}
+.login-header{
+    text-align:center;
+    margin-bottom:30px;
+}
+.login-header img{
+    max-width: 80px;
+    margin-bottom: 30px;
+}
+.login-header h2{
+    font-size: 20px;
+    font-weight: 700;
+}
+.form-group label{
+    font-size:12px;
+    font-weight:600;
+}
+.form-group .form-control{
+    padding:10px 20px;
+}
+.form-group .form-control::placeholder{
+    font-size:14px;
+    opacity:0.3;
+}
+.login-form a{
+    color:#F87D72;
+    font-size:14px;
+}
+.login-form  p{
+    margin:0;
+    font-size:14px;
+    text-align:center;
+}
+.form-group{
+    position: relative;
+}
+.form-group .toggel-icon{
+    position: absolute;
+    right: 12px;
+    bottom: 12px;
+    opacity:0.5;
+}
+.login-btn{
+    width:100%;
+    border-radius:5px;
+    font-size:18px;
+    padding:5px;
+}
+.login-btn:hover{
+    color:#161328;
+}
+.login-form h4{
+    text-align:center;
+    font-weight: 500;
+    font-size:18px;
+    margin-bottom:30px;
+}
+@media(max-width:1380px){
+    .login-form{
+        padding: 25px 45px;
+    }
+}
+@media(max-width:480px){
+    .login-area{
+        padding:60px 0px;
+    }
+    .login-img01{
+        top: 30%;
+        right: 0px;
+        width: 125px;
+    }
+    .login-img02{
+        bottom: -76px;
+        left: -83px;
+        width: 154px;
+    }
+    .login-form{
+        padding:15px 30px;
+    }
+    .login-form h4{
+        font-size:14px;
+    }
+    .login-btn{
+        font-size:16px;
+    }
+}

@@ -1,0 +1,297 @@
+.profile-area{
+    padding:60px 0px;
+}
+.profile-header{
+    margin-bottom: 30px;
+}
+.profile-header h2{
+    font-size:40px;
+    font-weight:700;
+    margin:0;
+}
+.btn-fill-out{
+    padding:6px 28px;
+}
+.profile-details h4{
+    font-size:18px;
+    font-weight: 600;
+    margin-bottom:20px;
+}
+.profile-box label{
+    font-size:12px;
+    font-weight: 600;
+    margin-bottom:10px;
+}
+.profile-box .form-control{
+    font-size:14px;
+    color:#161328;
+    font-weight: 500;
+}
+.change-btn{
+    font-size:16px;
+    text-decoration: underline;
+    opacity: 0.4;
+    margin-bottom: 50px;
+    display: inline-block;
+}
+.profile-address h4{
+    font-size:18px;
+    font-weight: 600;
+    margin-bottom:20px;   
+    margin-bottom: 50px;
+}
+.add-new-btn{
+    width:100%;
+    height:100%;
+    padding:20px;
+    text-align:center;
+    border:2px dashed #ccc;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.add-new-btn img{
+    width:70px;
+    margin-bottom:15px;
+}
+.add-new-btn p{
+    margin:0;
+    font-size:14px;
+    opacity: 0.3;
+}
+.address-box h4{
+    font-size: 20px;
+    font-weight: 600;
+    margin-bottom:15px;
+}
+.address-box p{
+    font-size:20px;
+    margin:0;
+    padding-bottom:10px;
+}
+.footer-button a{
+    font-size:20px;
+    display:inline-block;
+}
+.footer-button a:last-child{
+    color:#D00030;
+    margin-left:20px;
+}
+input[type="radio"]{
+    margin:0px 10px 0px 25px;
+}
+.modal-title{
+    text-align: center;
+    width: 100%;
+    font-size:18px;
+    font-weight:600;
+    margin:0;
+    padding-top: 20px;
+}
+.modal-header{
+    border:none;
+}
+.add-address-modal{
+    max-width:690px;
+    box-shadow: 0px 5px 30px #0000000D;
+    border-radius: 15px;
+    overflow: hidden;
+    border:none;
+}
+.modal-content{
+    border-radius: 15px;
+    overflow: hidden;
+}
+.modal-footer{
+    border:none;
+}
+.close:focus{
+    outline:none;
+}
+/* .profile-box{
+    padding: 10px 20px;
+} */
+.profile-card{
+    padding:60px 0px;
+}
+.profile-card h4{
+    font-size: 18px;
+    font-weight: 600;
+    margin-bottom: 50px;
+}
+.card-box img{
+    width:100%;
+}
+.card-box p{
+    font-size:12px;
+    margin:0;
+    opacity:0.4;
+}
+.card-box h4{
+    font-size:16px;
+    font-weight: 600;
+    margin:10px 0px;
+}
+.card-btn img{
+    width:35px;
+}
+.add-card-modal{
+    max-width:445px;
+    box-shadow: 0px 5px 30px #0000000D;
+    border-radius: 15px;
+    overflow: hidden;
+    border:none;
+}
+.img-fluid{
+    width:100%;
+    margin-bottom:40px;
+}
+.profile-address{
+    padding:60px 0px;
+}
+.password .mat-form-field + .mat-form-field {
+    margin-left: 8px;
+  }
+  
+.password .example-right-align {
+    text-align: right;
+  }
+  
+.password input.example-right-align::-webkit-outer-spin-button,
+.password input.example-right-align::-webkit-inner-spin-button {
+    display: none;
+}
+  
+.password input.example-right-align {
+    -moz-appearance: textfield;
+}
+::ng-deep .input.mat-input-element{
+    margin:0px !important;
+}
+
+.password-box label{
+    font-size:12px;
+    font-weight: 500;
+    margin-bottom:0px;
+}
+.address-box{
+    padding:38px 22px 23px 30px;
+    box-shadow: 0px 5px 30px #0000000D;
+    border-radius: 10px;
+}
+.card-box{
+    padding:20px;
+    box-shadow: 0px 5px 30px #0000000D;
+    border-radius: 10px;
+}
+.change-password-modal{
+    width:418px;
+}
+.password-box{
+    padding:0px 40px 10px 40px;
+}
+.modal-btn{
+    width:100%;
+}
+@media(max-width:1380px){
+    .address-box p{
+        font-size:16px;
+        padding-bottom:5px;
+    }
+    .address-box{
+        padding:20px 16px 16px 20px;
+    }
+    .change-btn{
+        margin-bottom:35px;
+    }
+    .profile-address h4{
+        margin-bottom:30px;
+    }
+    .profile-card h4{
+        margin-bottom:30px;
+    }
+    .card-box h4{
+        margin:8px 0px;
+    }
+}
+@media(max-width:992px){
+    .profile-area{
+        padding:40px 0px;
+    }
+    .profile-box{
+        margin-bottom:30px;
+    }
+    .profile-address{
+        padding:40px 0px;
+    }
+    .profile-card{
+        padding:40px 0px;
+    }
+    .profile-header{
+        margin-bottom: 30px;
+    }
+    .profile-header h2{
+        font-size: 30px;
+    }
+    .toggle-btn{
+        display: inline-block;
+        margin-bottom: 20px;
+    }
+    .address-box{
+        margin-bottom: 20px;
+    }
+    .card-box{
+        margin-bottom: 20px;
+    }
+    .produt-images-area{
+        margin-bottom:20px;
+    }
+}
+@media(max-width:480px){
+    .profile-header{
+        margin-bottom: 20px;
+    }
+    .profile-header h2{
+        font-size: 25px;
+    }
+    .profile-box{
+        padding:0px;
+        margin-bottom:20px;
+    }
+    .change-btn{
+        font-size:15px;
+    }
+    .profile-details h4{
+        margin-bottom: 10px;
+    }
+    .address-box h4{
+        font-size:16px;
+    }
+    .address-box p{
+        font-size:14px;
+        padding-bottom:5px;
+    }
+    
+    .address-box {
+        padding: 10px 6px 6px 10px;
+    }
+    .card-box{
+        padding:10px;
+    }
+    .profile-address h4{
+        margin-bottom:15px;
+    }
+    .profile-card h4{
+        margin-bottom:20px;
+    }
+    .modal-dialog{
+        width:auto;
+    }
+    .diamond-details{
+        padding-bottom:0px;
+    }
+    .card-box h4{
+        font-size:14px;
+        margin:2px 0px;
+    }
+}

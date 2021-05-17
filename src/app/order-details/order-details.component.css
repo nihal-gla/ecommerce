@@ -1,0 +1,256 @@
+.order-details-area{
+    padding:60px 0px;
+}
+.order-header{
+    margin-bottom:30px;
+}
+.order-header h2{
+    font-size:40px;
+    color:#161328;
+    margin-bottom:30px;
+    font-weight: 600;
+}
+.order-header ul li{
+    display: inline-block;
+    font-size:20px;
+    margin-right:40px;
+    font-weight:500;
+}
+.order-header ul li:last-child{
+    margin-right:0px;
+}
+.shipment-box h3{
+    font-size:25px;
+    margin-bottom:30px;
+    font-weight: 600;
+}
+.shipment-box p{
+    font-size: 20px;
+    line-height: 35px;
+}
+.shipment-box table{
+    width:100%;
+}
+.shipment-box table th, .shipment-box table td{
+    padding:7px;
+    font-size:20px;
+}
+.shipment-box table td{
+    text-align:right;
+}
+.shipment-box table h6{
+    font-size:25px;
+    color:#161328;
+    margin:0;
+    font-weight: 500;
+}
+.shipment-details{
+    padding:30px;
+    box-shadow: 0px 5px 30px #0000000D;
+    border-radius: 10px;
+    margin-bottom:50px;
+}
+.cart-product{
+    padding:50px;
+    box-shadow: 0px 5px 30px #0000000D;
+    border-radius: 10px;
+    margin-bottom:30px;
+}
+.product-img img{
+    width:100%;
+}
+.product-content h4{
+    font-size:30px;
+    margin-bottom:15px;
+    font-weight: 600;
+}
+.product-content h6{
+    font-size:25px;
+    margin-bottom:15px;
+    font-weight: 500;
+}
+.product-content p{
+    font-size: 20px;
+    margin-bottom: 10px;
+    opacity: 0.4;
+}
+.product-content p:last-child{
+    margin:0;
+}
+.paybtn{
+    border: 0.5px solid #161328;
+    padding: 14px 40px;
+    font-size: 18px;
+    transition:all 0.3s;
+    -webkit-transition: all 0.3s;
+}
+.paybtn:hover{
+    background-color:#161328;
+    color:#fff;
+    transition:all 0.3s;
+    -webkit-transition: all 0.3s;
+}
+.product-img{
+    border-radius:5px;
+    overflow: hidden;
+}
+
+.product-content{
+    padding-left:30px;
+}
+@media(max-width:1380px){
+    .order-header ul li{
+        font-size:18px;
+    }
+    .shipment-box h3{
+        font-size:22px;
+        margin-bottom:20px;
+    }
+    .shipment-box p {
+        font-size: 18px;
+        line-height: 28px;
+    }
+    .shipment-box table th, .shipment-box table td{
+        padding:5px;
+        font-size:18px;
+    }
+    .shipment-box table h6{
+        font-size:22px;
+    }
+    .product-content h4{
+        font-size: 27px;
+    }
+    .product-content h6{
+        font-size:22px;
+    }
+    .product-content p{
+        font-size:18px;
+    }
+    .cart-product{
+        padding:30px;
+    }
+    .paybtn{
+        padding: 10px 40px;
+        font-size: 16px;
+    }
+}
+@media(max-width:992px){
+    .order-details-area{
+        padding:40px 0px;
+    }
+    .order-header h2{
+        font-size:30px;
+        margin-bottom:10px;
+    }
+    .order-header span{
+        font-size:16px;
+    }
+    .shipment-box{
+        margin-bottom:20px;
+    }
+    .shipment-details{
+        padding:0px;
+    }
+    .break-btn br{
+        display: none;
+    }
+    .break-btn {
+        display: flex;
+        align-items: center;
+    }
+    .paybtn{
+        margin-left:15px;
+    }
+    .product-content h4{
+        margin-bottom:10px;
+    }
+    .product-content h6{
+        margin-bottom:5px;
+    }
+    .product-content p{
+        margin:0;
+    }
+    .product-content p:last-child{
+        margin-bottom:10px;
+    }
+    .cart-product .align-items-center{
+        align-items:start !important;
+    }
+}
+@media(max-width:767px){
+
+    .product-content h4{
+        font-size:20px;
+        margin:0;
+    }
+    .product-content h6{
+        font-size:18px;
+    }
+    .product-content p{
+        font-size:15px;
+    }
+    .order-header ul li{
+        display: block;
+        font-size:16px;
+    }
+    .cart-product {
+        padding: 15px;
+    }
+}
+@media(max-width:480px){
+    .order-header ul li{
+        font-size:14px;
+        line-height: 20px;
+    }
+    .order-header h2{
+        font-size:25px;
+        margin-bottom:5px;
+    }
+    .order-header span{
+        font-size:14px;
+        display:block;
+    }
+    .order-header{
+        margin-bottom: 20px;
+    }
+    .shipment-box h3{
+        font-size: 18px;
+        margin-bottom: 10px;
+    }
+    .shipment-box p{
+        font-size:14px;
+    }
+    .shipment-box table th, .shipment-box table td{
+        font-size:14px;
+    }
+    .shipment-box h6{
+        font-size:18px !important;
+    }
+    .product-content h4{
+        font-size:18px;
+        margin:0;
+    }
+    .product-content{
+        padding-left:20px;
+    }
+    .product-content h6{
+        font-size:14px;
+        margin:0;
+    }
+    .product-content p{
+        font-size: 12px;
+    }
+    .btn-fill-out{
+        padding: 4px 12px;
+        font-size: 13px;
+    }
+    .shipment-details{
+        padding-top:20px !important;
+    }
+    .paybtn{
+        font-size:13px;
+    }
+    .paybtn{
+        padding: 4px 12px;
+    }
+}

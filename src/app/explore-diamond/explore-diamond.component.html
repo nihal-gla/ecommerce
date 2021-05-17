@@ -1,0 +1,873 @@
+<app-header></app-header>
+<div class="diamond-search">
+    <div class="float-search-bar">
+        <div class="search-bar">
+            <form>
+                <input type="text" placeholder="Search Here" class="form-control" id="search_input">
+                <button type="submit" class="search_icon"><i class="ti-search"></i></button>
+            </form>
+        </div>
+    </div>
+</div>
+<div class="diamond-section">
+    <div class="container">
+        <div class="diamond-top-section">
+            <div class="diamon-heading">
+                <h2>Explore all Poshaks</h2>
+                <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut.</p>
+            </div>
+            <div class="filter-section">
+                <div class="accordion" id="accordionExample">
+                    <div class="card">
+                      <div class="card-header" id="headingOne">
+                        <div class="row no-gutters">
+                            <div class="col-6">
+                                <div class="row no-gutters">
+                                    <div class="col-lg-4">
+                                        <select name="" id="" class="form-control">
+                                            <option value="">Price: Low to High</option>
+                                            <option value="">Price: High to Low</option>
+                                        </select>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- <div class="col-6 text-right">
+                                <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                                    Filters <i class="fa fa-filter"></i>
+                                </button>
+                            </div> -->
+                        </div>
+                      </div>
+                  
+                      <!-- <div id="collapseOne" class="collapse" aria-labelledby="headingOne" data-parent="#accordionExample">
+                        <div class="card-body filter-area">
+                            <div class="row">
+                                <div class="col-lg-4">
+                                    <div class="filter-box" [ngClass]="status ? 'active' : 'inactive'">
+                                        <div class="filter-header">
+                                            <div class="row no-gutters align-items-center">
+                                                <div class="col-6">
+                                                    <label for="" class="box-label">Shape </label>
+                                                </div>
+                                                <div class="col-6">
+                                                    <div class="filter-toggle-btn float-right">
+                                                        <input type="checkbox" id="toggle-button-checkbox" (click)="clickEvent()" checked>
+                                                        <label class="toggle-button-switch"  
+                                                        for="toggle-button-checkbox"></label>
+                                                        <div class="toggle-button-text">
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                       <ul>
+                                           <li>
+                                               <button type="button" class="tab-btn"><input type="checkbox"><span class="bg-color"></span><span class="pic-01 diamond-icon"></span><span class="btn-txt">Round</span> </button>
+                                           </li>
+                                           <li>
+                                                <button type="button" class="tab-btn"><input type="checkbox"><span class="bg-color"></span><span class="pic-02 diamond-icon"></span><span class="btn-txt">Princess</span> </button>
+                                           </li>
+                                           <li>
+                                                <button type="button" class="tab-btn"><input type="checkbox"><span class="bg-color"></span><span class="pic-03 diamond-icon"></span><span class="btn-txt">Cushion</span> </button>
+                                           </li>
+                                           <li>
+                                                <button type="button" class="tab-btn"><input type="checkbox"><span class="bg-color"></span><span class="pic-04 diamond-icon"></span><span class="btn-txt">Oval</span> </button>
+                                           </li>
+                                           <li>
+                                                <button type="button" class="tab-btn"><input type="checkbox"><span class="bg-color"></span><span class="pic-05 diamond-icon"></span><span class="btn-txt">Emerald</span> </button>
+                                           </li>
+                                           <li>
+                                                <button type="button" class="tab-btn"><input type="checkbox"><span class="bg-color"></span><span class="pic-06 diamond-icon"></span><span class="btn-txt">Pear</span> </button>
+                                           </li>
+                                           <li>
+                                                <button type="button" class="tab-btn"><input type="checkbox"><span class="bg-color"></span><span class="pic-07 diamond-icon"></span><span class="btn-txt">Ascher</span> </button>
+                                           </li>
+                                           <li>
+                                               <button type="button" class="tab-btn"><input type="checkbox"><span class="bg-color"></span><span class="pic-08 diamond-icon"></span><span class="btn-txt">Marquise</span> </button>
+                                           </li>
+                                       </ul>
+                                   </div>
+                                </div>
+                                <div class="col-lg-4">
+                                    <div class="filter-box " [ngClass]="status0 ? 'active' : 'inactive'">
+                                        <div class="filter-header">
+                                            <div class="row no-gutters align-items-center">
+                                                <div class="col-6">
+                                                    <label for="" class="box-label">Price </label>
+                                                </div>
+                                                <div class="col-6">
+                                                    <div class="filter-toggle-btn float-right">
+                                                        <input type="checkbox" id="toggle-button-checkbox01" (click)="clickEvent1()" checked>
+                                                        <label class="toggle-button-switch"  
+                                                        for="toggle-button-checkbox01"></label>
+                                                        <div class="toggle-button-text">
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="row">
+                                            <div class="col-6">
+                                                <div class="price-section">
+                                                    <label for="">Min Price</label>
+                                                    <input type="text" value="{{lowValue}}" class="form-control">
+                                                </div>
+                                            </div>
+                                            <div class="col-6">
+                                                <div class="price-section">
+                                                    <label for="">Max Price</label>
+                                                    <input type="text" value="{{highValue}}" class="form-control">
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="price-section">
+                                            <ngx-slider [(value)]="lowValue" [(highValue)]="highValue" [options]="options"></ngx-slider>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-4">
+                                    <div class="filter-box" [ngClass]="status1 ? 'active' : 'inactive'">
+                                        <div class="filter-header">
+                                            <div class="row no-gutters align-items-center">
+                                                <div class="col-6">
+                                                    <label for="" class="box-label">Carat </label>
+                                                </div>
+                                                <div class="col-6">
+                                                    <div class="filter-toggle-btn float-right">
+                                                        <input type="checkbox" id="toggle-button-checkbox02" (click)="clickEvent2()" checked>
+                                                        <label class="toggle-button-switch"  
+                                                        for="toggle-button-checkbox02"></label>
+                                                        <div class="toggle-button-text">
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="row">
+                                            <div class="col-6">
+                                                <div class="price-section">
+                                                    <label for="" class="box-label">Min Carat</label>
+                                                    <input type="text" value="{{lowCarat}}" class="form-control">
+                                                </div>
+                                            </div>
+                                            <div class="col-6">
+                                                <div class="price-section">
+                                                    <label for="">Max Carat</label>
+                                                    <input type="text" value="{{highCarat}}" class="form-control">
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="price-section">
+                                            <ngx-slider [(value)]="lowCarat" [(highValue)]="highCarat" [options]="options01"></ngx-slider>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-4">
+                                    <div class="filter-box" [ngClass]="status2 ? 'active' : 'inactive'">
+                                        <div class="filter-header">
+                                            <div class="row no-gutters align-items-center">
+                                                <div class="col-6">
+                                                    <label for="" class="box-label">Cut </label>
+                                                </div>
+                                                <div class="col-6">
+                                                    <div class="filter-toggle-btn float-right">
+                                                        <input type="checkbox" id="toggle-button-checkbox03" (click)="clickEvent3()" checked>
+                                                        <label class="toggle-button-switch"  
+                                                        for="toggle-button-checkbox03"></label>
+                                                        <div class="toggle-button-text">
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="price-section color-box cut-section">
+                                            <ul>
+                                                <li>Good</li>
+                                                <li>Very Good</li>
+                                                <li>Ideal</li>
+                                                <li>Astro Ideal</li>
+                                            </ul>
+                                            <ngx-slider [(value)]="lowCut" [(highValue)]="highCut" [options]="options02"></ngx-slider>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-4">
+                                    <div class="filter-box" [ngClass]="status3 ? 'active' : 'inactive'">
+                                        <div class="filter-header">
+                                            <div class="row no-gutters align-items-center">
+                                                <div class="col-6">
+                                                    <label for="" class="box-label">Color </label>
+                                                </div>
+                                                <div class="col-6">
+                                                    <div class="filter-toggle-btn float-right">
+                                                        <input type="checkbox" id="toggle-button-checkbox04" (click)="clickEvent4()">
+                                                        <label class="toggle-button-switch"  
+                                                        for="toggle-button-checkbox04"></label>
+                                                        <div class="toggle-button-text">
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="price-section color-box">
+                                            <ul>
+                                                <li>K</li>
+                                                <li>J</li>
+                                                <li>I</li>
+                                                <li>H</li>
+                                                <li>G</li>
+                                                <li>F</li>
+                                                <li>E</li>
+                                                <li>D</li>
+                                            </ul>
+                                            <ngx-slider [(value)]="lowColor" [(highValue)]="highColor" [options]="options03"></ngx-slider>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-4">
+                                    <div class="filter-box" [ngClass]="status4 ? 'active' : 'inactive'">
+                                        <div class="filter-header">
+                                            <div class="row no-gutters align-items-center">
+                                                <div class="col-6">
+                                                    <label for="" class="box-label">Clarity </label>
+                                                </div>
+                                                <div class="col-6">
+                                                    <div class="filter-toggle-btn float-right">
+                                                        <input type="checkbox" id="toggle-button-checkbox05" (click)="clickEvent5()">
+                                                        <label class="toggle-button-switch"  
+                                                        for="toggle-button-checkbox05"></label>
+                                                        <div class="toggle-button-text">
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="price-section color-box">
+                                            <ul>
+                                                <li>SI2</li>
+                                                <li>SI1</li>
+                                                <li>VS2</li>
+                                                <li>VS1</li>
+                                                <li>VVS2</li>
+                                                <li>VVS1</li>
+                                                <li>IF</li>
+                                                <li>FL</li>
+                                            </ul>
+                                            <ngx-slider [(value)]="lowClarity" [(highValue)]="highClarity" [options]="options04"></ngx-slider>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-4">
+                                    <div class="filter-box" [ngClass]="status5 ? 'active' : 'inactive'">
+                                        <div class="filter-header">
+                                            <div class="row no-gutters align-items-center">
+                                                <div class="col-6">
+                                                    <label for="" class="box-label">Polish </label>
+                                                </div>
+                                                <div class="col-6">
+                                                    <div class="filter-toggle-btn float-right">
+                                                        <input type="checkbox" id="toggle-button-checkbox06" (click)="clickEvent6()">
+                                                        <label class="toggle-button-switch"  
+                                                        for="toggle-button-checkbox06"></label>
+                                                        <div class="toggle-button-text">
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="price-section color-box  polish-box">
+                                            <ul>
+                                                <li>G</li>
+                                                <li>VG</li>
+                                                <li>EX</li>
+                                            </ul>
+                                            <ngx-slider [(value)]="lowPolish" [(highValue)]="highPolish" [options]="options05"></ngx-slider>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                      </div> -->
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="diamond-product">
+            <div class="row">
+                <div class="col-lg-20 col-md-4 col-6">
+                    <a href="/product-details">
+                        <div class="product-box">
+                            <div class="product-img">
+                                <img src="../assets/images/product-img/1.png" alt="">
+                            </div>
+                            <div class="product-content">
+                                <div class="product-name">
+                                    <h4>10 inch Goplaji-Blue</h4>
+                                    <p>Lorem Ipsum</p>
+                                </div>
+                                <div class="product-price">
+                                    <div class="row no-gutters align-items-center">
+                                        <div class="col-6">
+                                            <h6>Rs <span>2946</span></h6>
+                                        </div>
+                                        <div class="col-6">
+                                            <ul>
+                                                <li><a href="/cart"><i class="fa fa-shopping-cart"></i></a></li>
+                                                <li><a href="/wishlist"><i class="fa fa-heart"></i></a></li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="col-lg-20 col-md-4 col-6">
+                    <a href="/product-details">
+                        <div class="product-box">
+                            <div class="product-img">
+                                <img src="../assets/images/product-img/1.png" alt="">
+                            </div>
+                            <div class="product-content">
+                                <div class="product-name">
+                                    <h4>10 inch Goplaji-Blue</h4>
+                                    <p>Lorem Ipsum</p>
+                                </div>
+                                <div class="product-price">
+                                    <div class="row no-gutters align-items-center">
+                                        <div class="col-6">
+                                            <h6>Rs <span>2946</span></h6>
+                                        </div>
+                                        <div class="col-6">
+                                            <ul>
+                                                <li><a href="cart"><i class="fa fa-shopping-cart"></i></a></li>
+                                                <li><a href="wishlist"><i class="fa fa-heart"></i></a></li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="col-lg-20 col-md-4 col-6">
+                    <a href="/product-details">
+                        <div class="product-box">
+                            <div class="product-img">
+                                <img src="../assets/images/product-img/1.png" alt="">
+                            </div>
+                            <div class="product-content">
+                                <div class="product-name">
+                                    <h4>10 inch Goplaji-Blue</h4>
+                                    <p>Lorem Ipsum</p>
+                                </div>
+                                <div class="product-price">
+                                    <div class="row no-gutters align-items-center">
+                                        <div class="col-6">
+                                            <h6>Rs <span>2946</span></h6>
+                                        </div>
+                                        <div class="col-6">
+                                            <ul>
+                                                <li><a href="cart"><i class="fa fa-shopping-cart"></i></a></li>
+                                                <li><a href="wishlist"><i class="fa fa-heart"></i></a></li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="col-lg-20 col-md-4 col-6">
+                    <a href="/product-details">
+                        <div class="product-box">
+                            <div class="product-img">
+                                <img src="../assets/images/product-img/1.png" alt="">
+                            </div>
+                            <div class="product-content">
+                                <div class="product-name">
+                                    <h4>10 inch Goplaji-Blue</h4>
+                                    <p>Lorem Ipsum</p>
+                                </div>
+                                <div class="product-price">
+                                    <div class="row no-gutters align-items-center">
+                                        <div class="col-6">
+                                            <h6>Rs <span>2946</span></h6>
+                                        </div>
+                                        <div class="col-6">
+                                            <ul>
+                                                <li><a href="cart"><i class="fa fa-shopping-cart"></i></a></li>
+                                                <li><a href="wishlist"><i class="fa fa-heart"></i></a></li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="col-lg-20 col-md-4 col-6">
+                    <a href="/product-details">
+                        <div class="product-box">
+                            <div class="product-img">
+                                <img src="../assets/images/product-img/1.png" alt="">
+                            </div>
+                            <div class="product-content">
+                                <div class="product-name">
+                                    <h4>10 inch Goplaji-Blue</h4>
+                                    <p>Lorem Ipsum</p>
+                                </div>
+                                <div class="product-price">
+                                    <div class="row no-gutters align-items-center">
+                                        <div class="col-6">
+                                            <h6>Rs <span>2946</span></h6>
+                                        </div>
+                                        <div class="col-6">
+                                            <ul>
+                                                <li><a href="cart"><i class="fa fa-shopping-cart"></i></a></li>
+                                                <li><a href="wishlist"><i class="fa fa-heart"></i></a></li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="col-lg-20 col-md-4 col-6">
+                    <a href="/product-details">
+                        <div class="product-box">
+                            <div class="product-img">
+                                <img src="../assets/images/product-img/1.png" alt="">
+                            </div>
+                            <div class="product-content">
+                                <div class="product-name">
+                                    <h4>10 inch Goplaji-Blue</h4>
+                                    <p>Lorem Ipsum</p>
+                                </div>
+                                <div class="product-price">
+                                    <div class="row no-gutters align-items-center">
+                                        <div class="col-6">
+                                            <h6>Rs <span>2946</span></h6>
+                                        </div>
+                                        <div class="col-6">
+                                            <ul>
+                                                <li><a href="cart"><i class="fa fa-shopping-cart"></i></a></li>
+                                                <li><a href="wishlist"><i class="fa fa-heart"></i></a></li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="col-lg-20 col-md-4 col-6">
+                    <a href="/product-details">
+                        <div class="product-box">
+                            <div class="product-img">
+                                <img src="../assets/images/product-img/1.png" alt="">
+                            </div>
+                            <div class="product-content">
+                                <div class="product-name">
+                                    <h4>10 inch Goplaji-Blue</h4>
+                                    <p>Lorem Ipsum</p>
+                                </div>
+                                <div class="product-price">
+                                    <div class="row no-gutters align-items-center">
+                                        <div class="col-6">
+                                            <h6>Rs <span>2946</span></h6>
+                                        </div>
+                                        <div class="col-6">
+                                            <ul>
+                                                <li><a href="cart"><i class="fa fa-shopping-cart"></i></a></li>
+                                                <li><a href="wishlist"><i class="fa fa-heart"></i></a></li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="col-lg-20 col-md-4 col-6">
+                    <a href="/product-details">
+                        <div class="product-box">
+                            <div class="product-img">
+                                <img src="../assets/images/product-img/1.png" alt="">
+                            </div>
+                            <div class="product-content">
+                                <div class="product-name">
+                                    <h4>10 inch Goplaji-Blue</h4>
+                                    <p>Lorem Ipsum</p>
+                                </div>
+                                <div class="product-price">
+                                    <div class="row no-gutters align-items-center">
+                                        <div class="col-6">
+                                            <h6>Rs <span>2946</span></h6>
+                                        </div>
+                                        <div class="col-6">
+                                            <ul>
+                                                <li><a href="cart"><i class="fa fa-shopping-cart"></i></a></li>
+                                                <li><a href="wishlist"><i class="fa fa-heart"></i></a></li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="col-lg-20 col-md-4 col-6">
+                    <a href="/product-details">
+                        <div class="product-box">
+                            <div class="product-img">
+                                <img src="../assets/images/product-img/1.png" alt="">
+                            </div>
+                            <div class="product-content">
+                                <div class="product-name">
+                                    <h4>10 inch Goplaji-Blue</h4>
+                                    <p>Lorem Ipsum</p>
+                                </div>
+                                <div class="product-price">
+                                    <div class="row no-gutters align-items-center">
+                                        <div class="col-6">
+                                            <h6>Rs <span>2946</span></h6>
+                                        </div>
+                                        <div class="col-6">
+                                            <ul>
+                                                <li><a href="cart"><i class="fa fa-shopping-cart"></i></a></li>
+                                                <li><a href="wishlist"><i class="fa fa-heart"></i></a></li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="col-lg-20 col-md-4 col-6">
+                    <a href="/product-details">
+                        <div class="product-box">
+                            <div class="product-img">
+                                <img src="../assets/images/product-img/1.png" alt="">
+                            </div>
+                            <div class="product-content">
+                                <div class="product-name">
+                                    <h4>10 inch Goplaji-Blue</h4>
+                                    <p>Lorem Ipsum</p>
+                                </div>
+                                <div class="product-price">
+                                    <div class="row no-gutters align-items-center">
+                                        <div class="col-6">
+                                            <h6>Rs <span>2946</span></h6>
+                                        </div>
+                                        <div class="col-6">
+                                            <ul>
+                                                <li><a href="cart"><i class="fa fa-shopping-cart"></i></a></li>
+                                                <li><a href="wishlist"><i class="fa fa-heart"></i></a></li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="col-lg-20 col-md-4 col-6">
+                    <a href="/product-details">
+                        <div class="product-box">
+                            <div class="product-img">
+                                <img src="../assets/images/product-img/1.png" alt="">
+                            </div>
+                            <div class="product-content">
+                                <div class="product-name">
+                                    <h4>10 inch Goplaji-Blue</h4>
+                                    <p>Lorem Ipsum</p>
+                                </div>
+                                <div class="product-price">
+                                    <div class="row no-gutters align-items-center">
+                                        <div class="col-6">
+                                            <h6>Rs <span>2946</span></h6>
+                                        </div>
+                                        <div class="col-6">
+                                            <ul>
+                                                <li><a href="cart"><i class="fa fa-shopping-cart"></i></a></li>
+                                                <li><a href="wishlist"><i class="fa fa-heart"></i></a></li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="col-lg-20 col-md-4 col-6">
+                    <a href="/product-details">
+                        <div class="product-box">
+                            <div class="product-img">
+                                <img src="../assets/images/product-img/1.png" alt="">
+                            </div>
+                            <div class="product-content">
+                                <div class="product-name">
+                                    <h4>10 inch Goplaji-Blue</h4>
+                                    <p>Lorem Ipsum</p>
+                                </div>
+                                <div class="product-price">
+                                    <div class="row no-gutters align-items-center">
+                                        <div class="col-6">
+                                            <h6>Rs <span>2946</span></h6>
+                                        </div>
+                                        <div class="col-6">
+                                            <ul>
+                                                <li><a href="cart"><i class="fa fa-shopping-cart"></i></a></li>
+                                                <li><a href="wishlist"><i class="fa fa-heart"></i></a></li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="col-lg-20 col-md-4 col-6">
+                    <a href="/product-details">
+                        <div class="product-box">
+                            <div class="product-img">
+                                <img src="../assets/images/product-img/1.png" alt="">
+                            </div>
+                            <div class="product-content">
+                                <div class="product-name">
+                                    <h4>10 inch Goplaji-Blue</h4>
+                                    <p>Lorem Ipsum</p>
+                                </div>
+                                <div class="product-price">
+                                    <div class="row no-gutters align-items-center">
+                                        <div class="col-6">
+                                            <h6>Rs <span>2946</span></h6>
+                                        </div>
+                                        <div class="col-6">
+                                            <ul>
+                                                <li><a href="cart"><i class="fa fa-shopping-cart"></i></a></li>
+                                                <li><a href="wishlist"><i class="fa fa-heart"></i></a></li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="col-lg-20 col-md-4 col-6">
+                    <a href="/product-details">
+                        <div class="product-box">
+                            <div class="product-img">
+                                <img src="../assets/images/product-img/1.png" alt="">
+                            </div>
+                            <div class="product-content">
+                                <div class="product-name">
+                                    <h4>10 inch Goplaji-Blue</h4>
+                                    <p>Lorem Ipsum</p>
+                                </div>
+                                <div class="product-price">
+                                    <div class="row no-gutters align-items-center">
+                                        <div class="col-6">
+                                            <h6>Rs <span>2946</span></h6>
+                                        </div>
+                                        <div class="col-6">
+                                            <ul>
+                                                <li><a href="cart"><i class="fa fa-shopping-cart"></i></a></li>
+                                                <li><a href="wishlist"><i class="fa fa-heart"></i></a></li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="col-lg-20 col-md-4 col-6">
+                    <a href="/product-details">
+                        <div class="product-box">
+                            <div class="product-img">
+                                <img src="../assets/images/product-img/1.png" alt="">
+                            </div>
+                            <div class="product-content">
+                                <div class="product-name">
+                                    <h4>10 inch Goplaji-Blue</h4>
+                                    <p>Lorem Ipsum</p>
+                                </div>
+                                <div class="product-price">
+                                    <div class="row no-gutters align-items-center">
+                                        <div class="col-6">
+                                            <h6>Rs <span>2946</span></h6>
+                                        </div>
+                                        <div class="col-6">
+                                            <ul>
+                                                <li><a href="cart"><i class="fa fa-shopping-cart"></i></a></li>
+                                                <li><a href="wishlist"><i class="fa fa-heart"></i></a></li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="col-lg-20 col-md-4 col-6">
+                    <a href="/product-details">
+                        <div class="product-box">
+                            <div class="product-img">
+                                <img src="../assets/images/product-img/1.png" alt="">
+                            </div>
+                            <div class="product-content">
+                                <div class="product-name">
+                                    <h4>10 inch Goplaji-Blue</h4>
+                                    <p>Lorem Ipsum</p>
+                                </div>
+                                <div class="product-price">
+                                    <div class="row no-gutters align-items-center">
+                                        <div class="col-6">
+                                            <h6>Rs <span>2946</span></h6>
+                                        </div>
+                                        <div class="col-6">
+                                            <ul>
+                                                <li><a href="cart"><i class="fa fa-shopping-cart"></i></a></li>
+                                                <li><a href="wishlist"><i class="fa fa-heart"></i></a></li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="col-lg-20 col-md-4 col-6">
+                    <a href="/product-details">
+                        <div class="product-box">
+                            <div class="product-img">
+                                <img src="../assets/images/product-img/1.png" alt="">
+                            </div>
+                            <div class="product-content">
+                                <div class="product-name">
+                                    <h4>10 inch Goplaji-Blue</h4>
+                                    <p>Lorem Ipsum</p>
+                                </div>
+                                <div class="product-price">
+                                    <div class="row no-gutters align-items-center">
+                                        <div class="col-6">
+                                            <h6>Rs <span>2946</span></h6>
+                                        </div>
+                                        <div class="col-6">
+                                            <ul>
+                                                <li><a href="cart"><i class="fa fa-shopping-cart"></i></a></li>
+                                                <li><a href="wishlist"><i class="fa fa-heart"></i></a></li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="col-lg-20 col-md-4 col-6">
+                    <a href="/product-details">
+                        <div class="product-box">
+                            <div class="product-img">
+                                <img src="../assets/images/product-img/1.png" alt="">
+                            </div>
+                            <div class="product-content">
+                                <div class="product-name">
+                                    <h4>10 inch Goplaji-Blue</h4>
+                                    <p>Lorem Ipsum</p>
+                                </div>
+                                <div class="product-price">
+                                    <div class="row no-gutters align-items-center">
+                                        <div class="col-6">
+                                            <h6>Rs <span>2946</span></h6>
+                                        </div>
+                                        <div class="col-6">
+                                            <ul>
+                                                <li><a href="cart"><i class="fa fa-shopping-cart"></i></a></li>
+                                                <li><a href="wishlist"><i class="fa fa-heart"></i></a></li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="col-lg-20 col-md-4 col-6">
+                    <a href="/product-details">
+                        <div class="product-box">
+                            <div class="product-img">
+                                <img src="../assets/images/product-img/1.png" alt="">
+                            </div>
+                            <div class="product-content">
+                                <div class="product-name">
+                                    <h4>10 inch Goplaji-Blue</h4>
+                                    <p>Lorem Ipsum</p>
+                                </div>
+                                <div class="product-price">
+                                    <div class="row no-gutters align-items-center">
+                                        <div class="col-6">
+                                            <h6>Rs <span>2946</span></h6>
+                                        </div>
+                                        <div class="col-6">
+                                            <ul>
+                                                <li><a href="cart"><i class="fa fa-shopping-cart"></i></a></li>
+                                                <li><a href="wishlist"><i class="fa fa-heart"></i></a></li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="col-lg-20 col-md-4 col-6">
+                    <a href="/product-details">
+                        <div class="product-box">
+                            <div class="product-img">
+                                <img src="../assets/images/product-img/1.png" alt="">
+                            </div>
+                            <div class="product-content">
+                                <div class="product-name">
+                                    <h4>10 inch Goplaji-Blue</h4>
+                                    <p>Lorem Ipsum</p>
+                                </div>
+                                <div class="product-price">
+                                    <div class="row no-gutters align-items-center">
+                                        <div class="col-6">
+                                            <h6>Rs <span>2946</span></h6>
+                                        </div>
+                                        <div class="col-6">
+                                            <ul>
+                                                <li><a href="cart"><i class="fa fa-shopping-cart"></i></a></li>
+                                                <li><a href="wishlist"><i class="fa fa-heart"></i></a></li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+            </div>
+            <div class="text-center diamond-pagenation">
+                <ul>
+                    <li class="active"><a href="#">1</a></li>
+                    <li><a href="#">2</a></li>
+                    <li><a href="#">3</a></li>
+                    <li><a href="#">4</a></li>
+                    <li><a href="#">5</a></li>
+                    <li><a href="#">...</a></li>
+                    <li><a href="#">25</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</div>
+<app-related-product></app-related-product>
+<app-footer></app-footer>

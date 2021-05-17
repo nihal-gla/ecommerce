@@ -1,0 +1,198 @@
+.billing-details{
+    padding:80px 0px;
+}
+.bill-header h2{
+    font-size:40px;
+    font-weight:700;
+    margin-bottom:60px;
+}
+.billing-form h4{
+    font-size: 18px;
+    margin-bottom: 30px;
+    font-weight: 600;
+}
+.form-group label{
+    font-size:12px;
+    margin-bottom:10px;
+    color:#000;
+    font-weight: 600;
+}
+.form-group .form-control::placeholder{
+    font-size:14px;
+    opacity: 0.3;
+}
+.form-group .form-control{
+    font-size:14px;
+    padding:9px 25px;
+}
+/* :ng-deep .iti{
+    display: inherit !important;
+} */
+.phone-input{
+    padding-left:50px !important;
+}
+.form-group input[type="radio"]{
+    margin:0px 5px 0px 10px;
+}
+.form-group span{
+    font-size:14px;
+    color:#000;
+}
+.form-group input[type="checkbox"]{
+    margin:0px 10px 0px 5px;
+    position: relative;
+}
+.ship-check{
+    margin-bottom:60px;
+}
+.form-group input[type="checkbox"]::before{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    content: '';
+    border-radius: 2px;
+    background-color: #fff;
+    border:1px solid #ccc;
+}
+.form-group input[type="checkbox"]:checked::after{
+    content: "";
+    display: block;
+    width: 4px;
+    height: 7px;
+    border: solid #F87D72;
+    border-width: 0 1px 1px 0;
+    -webkit-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    transform: rotate(45deg);
+    position: absolute;
+    top: 2px;
+    left: 4px;
+}
+.bil-form p{
+    font-size:14px;
+    margin:0;
+}
+.bil-form p a{
+    color:#F87D72;
+}
+.subscribe-area{
+    position: relative;
+}
+.subscribe-area .form-control{
+    padding-right:120px;
+}
+.subscribe-area button{
+    position: absolute;
+    top:0;
+    right:0;
+    padding: 6px 20px;
+    height: 100%;
+}
+.product-order-details table{
+    width:100%;
+}
+.product-order-details table td, .product-order-details table th{
+    padding:10px;
+    font-size: 20px;
+}
+.product-order-details h4{
+    font-size:25px;
+    font-weight: 600;
+    margin:0;
+}
+.product-order-details h3{
+    font-size:25px;
+    font-weight: 600;
+    margin:0;
+    padding-top:20px;
+}
+.product-order-details{
+    padding:20px;
+    box-shadow: 0px 5px 30px #0000000D;
+}
+.dotted-border{
+    border-bottom:2px dashed #dee2e6;
+    opacity: 0.4;
+}
+.product-order-details h3 span{
+    color:#FF8074;
+}
+.product-order-details table td{
+    text-align:right;
+}
+
+.btn-fill-out i{
+    color:#FF8074;
+    margin-left: 10px;
+}
+.product-content{
+    padding-left:40px;
+}
+.btn-fill-out i{
+    color:#FF8074;
+    margin-left: 10px;
+}
+.ship-check span{
+    font-size:18px;
+}
+@media(max-width:1380px){
+    .product-order-details h4{
+        font-size:20px;
+    }
+    .product-order-details table td, .product-order-details table th{
+        padding:7px;
+        font-size: 16px;
+    }
+    .product-order-details h3{
+        font-size:20px;
+    }
+}
+@media(max-width:920px){
+    .billing-details{
+        padding:40px 0px;
+    }
+    .bill-header h2{
+        font-size:30px;
+        margin-bottom:30px;
+    }
+    .billing-form{
+        margin-bottom:20px;
+    }
+}
+@media(max-width:480px){
+    .product-order-details table td, .product-order-details table th{
+        padding:5px;
+        font-size: 14px;
+    }
+    .product-order-details h4{
+        font-size: 15px;
+    }
+    .product-order-details h3{
+        font-size: 16px;
+    }
+    .bill-header h2{
+        font-size:25px;
+        margin-bottom:20px;
+    }
+    .billing-form h4{
+        font-size: 16px;
+        margin-bottom: 10px;
+    }
+    .ship-check span{
+        font-size:14px;
+    }
+    .product-order-details{
+        padding:10px;
+    }
+    .form-group .form-control{
+        padding:5px 20px;
+    }
+    .ship-check{
+        margin-bottom:20px;
+    }
+    .subscribe-area button{
+        padding:8px 20px;
+    }
+}

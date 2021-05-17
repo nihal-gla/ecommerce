@@ -1,0 +1,574 @@
+.product-box img{
+    width:100%;
+}
+.diamond-search{
+    height:95px;
+    background-color:#F7F7F7;
+    position: relative;
+}
+.float-search-bar{
+    position: absolute;
+    bottom: -55px;
+    left:0;
+    right: 0;
+}
+
+.product-img{
+    border-radius: 10px;
+    overflow: hidden;
+}
+.product-price{
+    padding:12px 20px;
+    border-radius:10px;
+    background-color:#A2A1A91C;
+}
+.product-name{
+    padding:15px 20px;
+}
+.product-content h4{
+    font-size:15px;
+    opacity:0.8;
+}
+.product-content p{
+    font-size:12px;
+    opacity:0.4;
+    margin:0;
+}
+.product-content h6{
+    font-size:20px;
+    color:#161328;
+    margin: 0;
+}
+.product-content h6 span{
+    color:#FF8074;
+}
+.product-content ul li{
+    display: inline-block;
+    margin-right: 20px;
+}
+.product-content ul li:last-child{
+    margin-right: 0px;
+}
+.product-content ul li a{
+    width:30px;
+    height:30px;
+    border-radius:100%;
+    color:#fff;
+    background-color:#161328;
+    display:flex;
+    align-items:center;
+    justify-content: center;
+    border:1px solid #161328;
+    box-shadow: 0px 15px 15px #00000019;
+}
+@media(min-width:992px){
+    .col-lg-20{
+        flex: 0 0 20%;
+        max-width: 20%;
+    }
+}
+
+.diamond-section{
+    padding:60px 0px;
+}
+.search-bar{
+    width:60%;
+    margin:0px auto;
+    position: relative;
+    margin-bottom:30px;
+    padding:15px 30px;
+    background-color:#fff;
+    box-shadow: 0px 5px 30px #0000000D;
+    border-radius: 5px;
+}
+.search-bar .form-control {
+    background-color: transparent;
+    border: none;
+    border-radius: 0;
+    height:auto;
+    padding:0px 25px 0px 0px;
+
+}
+.search-bar .form-control:focus{
+    box-shadow: none !important;
+    outline:none !important;
+}
+.search-bar .form-control::placeholder{
+    font-size:14px;
+    opacity: 0.3;
+}
+.search_icon {
+    font-size: 20px;
+    position: absolute;
+    right: 30px;
+    top: 15px;
+    border: 0;
+    background-color: transparent;
+    cursor: pointer;
+    padding: 0;
+    color: #000;
+}
+.card{
+    border:none;
+}
+.card-header{
+    background-color:transparent;
+    border-bottom:none;
+}
+.card-header .form-control{
+    padding:10px 20px;
+    color:#8A8993;
+    font-size: 14px;
+    height: auto;
+}
+.box-label{
+    font-size:18px;
+}
+.btn-link.collapsed{
+    background-color: transparent;
+}
+.btn-link{
+    padding:10px 15px;
+    border: 1px solid #CCCCCC;
+    border-radius: 5px;
+    color:#161328;
+    background-color: #F2F2F2;
+}
+.btn-link:hover{
+    text-decoration: none;
+}
+.diamon-heading{
+    text-align:center;
+}
+.diamon-heading h2{
+    font-size:40px;
+    font-weight:600;
+    margin-bottom: 15px;
+}
+.diamon-heading p{
+    font-size:18px;
+    opacity:0.5;
+    margin-bottom:50px;
+}
+.filter-section{
+    padding:10px 0px;
+    margin-bottom:30px;
+}
+.diamond-product .product-box{
+    margin:0;
+    box-shadow: 0px 8px 20px #00000012;
+    border-radius: 10px;
+    overflow: hidden;
+    margin-bottom:30px;
+}
+.product-area{
+    padding:80px 0px;
+}
+.diamond-pagenation{
+    padding-top:60px;
+}
+.diamond-pagenation ul li{
+    display:inline-block;
+    padding:5px 10px;
+    margin-right:15px;
+    font-size:20px;
+    opacity:0.4;
+}
+.diamond-pagenation ul li:last-child{
+    margin-right:0px;
+}
+.diamond-pagenation ul li.active{
+    opacity:1;
+    border-bottom:1px solid #FF8074;
+}
+.filter-box ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-wrap: wrap;
+}
+.filter-box ul li {
+    padding-right: 4px;
+    font-size: 14px;
+    text-align: center;
+}
+.diamond-icon{
+    background-image:url(../../assets/images/diamond-search.svg);
+    font-size:100px;
+    background-repeat: no-repeat;
+}
+.filter-box ul li button {
+    position: relative;
+    display: inline-block;
+    border: none;
+    text-align: center;
+    margin-bottom: 10px;
+    padding: 0;
+    background-color: transparent;
+    padding:5px 10px;
+    display:flex;
+    align-items: center;
+}
+.filter-box ul li button input[type="checkbox"]{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+}
+
+.filter-box ul li button .bg-color{
+	position: absolute;
+	width:100%;
+	height:100%;
+	top:0;
+	left:0;
+	background-color: #fff;
+	z-index: -1;
+	border-radius: 5px;
+    border:1px solid #ccc;
+}
+.filter-box ul li button span{
+	background-size: 1.79em 1.56em;
+	margin:0px auto;
+}
+.filter-box ul li button input:checked ~ .bg-color{
+	background-color: #FF8074;
+    border:1px solid #000;
+    border:1px solid #FF8074;
+    z-index: 1;
+    
+}
+.filter-box ul li button span.pic-01{
+	background-position: -138px -64px;
+	width: .2114em;
+    height: .2114em;
+}
+.filter-box ul li button input:checked ~ span{
+    color:#fff;
+    z-index: 1;
+}
+.filter-box ul li button input:checked ~ span.pic-01{
+	background-position: -137px -106px;
+    width: .2114em;
+    height: .2114em;
+}
+.btn-txt{
+    font-size:13px;
+    color:#000;
+}
+.filter-box ul li button span.pic-02{
+	background-position: -128px -135px;
+	width: .2114em;
+    height: .2114em;
+}
+.filter-box ul li button input:checked ~ span.pic-02{
+	background-position: -159px -22px;
+    width: .2114em;
+    height: .2114em;
+}
+.filter-box ul li button span.pic-03{
+	background-position: -1px -135px;
+	width: .2114em;
+    height: .2114em;
+}
+.filter-box ul li button input:checked ~ span.pic-03{
+	background-position: -43px -135px;
+    width: .2114em;
+    height: .2114em;
+}
+.filter-box ul li button span.pic-04{
+	background-position: -50px -85px;
+	width: .2114em;
+    height: .2114em;
+}
+.filter-box ul li button input:checked ~ span.pic-04{
+	background-position: -86px -85px;
+    width: .2114em;
+    height: .2114em;
+}
+.filter-box ul li button span.pic-05{
+	background-position: 1px -112px;;
+	width: .2114em;
+    height: .2114em;
+}
+.filter-box ul li button input:checked ~ span.pic-05{
+	background-position: -37px -112px;
+    width: .2114em;
+    height: .2114em;
+}
+.filter-box ul li button span.pic-06{
+	background-position:-117px -1px;
+	width: .2114em;
+    height: .2114em;
+}
+.filter-box ul li button input:checked ~ span.pic-06{
+	background-position: -117px -51px;
+    width: .2114em;
+    height: .2114em;
+}
+.filter-box ul li button span.pic-07{
+	background-position: -58px -112px;
+	width: .2114em;
+    height: .2114em;
+}
+.filter-box ul li button input:checked ~ span.pic-07{
+	background-position: -104px -112px;
+    width: .2114em;
+    height: .2114em;
+}
+.filter-box ul li button span.pic-08{
+	background-position:2px -86px;
+	width: .2114em;
+    height: .2114em;
+}
+.filter-box ul li button input:checked ~ span.pic-08{
+	background-position: -32px -86px;
+    width: .2114em;
+    height: .2114em;
+}
+.filter-toggle-btn input[type="checkbox"] {
+    display: none; 
+}
+
+.toggle-button-switch {
+    position: absolute;
+    top: -2px;
+    left: 0px;
+    width: 20px;
+    height: 20px;
+    background-color: #FF8074;
+    border-radius: 100%;
+    cursor: pointer;
+    z-index: 100;
+    transition: left 0.3s;
+}
+
+.toggle-button-text {
+    overflow: hidden;
+    background-color: #fff;
+    border-radius: 25px;
+    transition: background-color 0.3s;
+    width:38px;
+    height:15px;
+    z-index: 9;
+}
+.filter-toggle-btn input[type="checkbox"]:checked ~ .toggle-button-text{
+    background-color:#000;
+}
+.filter-toggle-btn input[type="checkbox"]:checked ~ .toggle-button-switch {
+    left: 20px;
+}
+
+.filter-header{
+    padding:10px 0px;
+}
+.filter-toggle-btn{
+    position: relative;
+}
+.filter-header label{
+    margin:0;
+    font-weight: 600;
+}
+.price-section .form-control{
+    font-size:14px;
+    color:#000;
+    height:auto;
+    padding: 4px 10px 4px 85px;
+}
+.price-section{
+    position: relative;
+}
+.price-section label{
+    position: absolute;
+    top: 6px;
+    left: 7px;
+    margin: 0;
+    opacity: 0.4;
+    font-size:13px;
+}
+::ng-deep .price-section .ngx-slider .ngx-slider-pointer {
+    cursor: pointer;
+    width: 20px;
+    height: 20px;
+    top: -6px;
+    background-color: #fff;
+    z-index: 3;
+    border-radius: 16px;
+    border: 5px solid #000;
+}
+::ng-deep .price-section .ngx-slider .ngx-slider-pointer:focus{
+    outline:none !important;
+}
+::ng-deep .price-section .ngx-slider .ngx-slider-selection{
+    background: rgb(249,207,203);
+    background: linear-gradient(90deg, rgba(249,207,203,1) 0%, rgba(249,125,113,1) 100%);
+}
+::ng-deep .price-section .ngx-slider .ngx-slider-bar{
+    height:8px;
+}
+::ng-deep .price-section .ngx-slider .ngx-slider-pointer:after{
+    opacity:0;
+}
+::ng-deep .price-section .ngx-slider .ngx-slider-bubble{
+    display:none;
+}
+::ng-deep .price-section .ngx-slider{
+    margin: 25px 0 15px;
+}
+.filter-box{
+    margin-bottom:20px;
+}
+.filter-box.active .box-label{
+    opacity:1;
+    transition:all 0.3s;
+    -webkit-transition: all 0.3s;
+}
+.filter-box.inactive .box-label{
+    opacity:0.2;
+    transition:all 0.3s;
+    -webkit-transition: all 0.3s;
+}
+.filter-box.active .price-section{
+    opacity:1;
+    transition:all 0.3s;
+    -webkit-transition: all 0.3s;
+}
+.filter-box.inactive .price-section{
+    opacity:0.2;
+    transition:all 0.3s;
+    -webkit-transition: all 0.3s;
+}
+::ng-deep .price-section .ngx-slider-inner-tooltip{
+    display:none;
+}
+::ng-deep .price-section .ngx-slider .ngx-slider-tick{
+    width: 3px;
+    top: 2px;
+    border-radius:0px;
+    margin-left:0;
+}
+::ng-deep .price-section .ngx-slider .ngx-slider-tick.ngx-slider-selected{
+    background:#000;
+}
+::ng-deep .price-section .ngx-slider .ngx-slider-tick-legend{
+    top:-30px;
+    white-space: nowrap;
+    font-size: 14px;
+    opacity: 0.6;
+    transform:translate(0, 0)
+}
+.color-box ul{
+    display:flex;
+    margin-top:10px;
+}
+.color-box ul li{
+    width: calc(100% / 8);
+    text-align:center;
+    font-size: 14px;
+    opacity: 0.6;
+    padding:0;
+}
+::ng-deep .color-box .ngx-slider{
+    margin:10px 0 15px;
+}
+.polish-box ul li{
+    width: calc(100% / 3);
+}
+.cut-section ul li{
+    width: calc(100% / 4);
+}
+.btn-link i{
+    margin-left:10px;
+}
+.accordion>.card .card-header{
+    margin-bottom:0;
+}
+@media(max-width:1380px){
+    .product-price{
+        padding:10px 15px;
+    }
+    .product-content ul li{
+        margin-right:10px;
+    }
+}
+@media(max-width:1200px){
+    .product-price {
+        padding: 10px 7px;
+    }
+    
+}
+@media(max-width:992px){
+    .diamond-section{
+        padding:40px 0px;
+    }
+    .diamond-search{
+        height:60px;
+    }
+    .diamond-pagenation{
+        padding-top:30px;
+    }
+}
+@media(max-width:767px){
+    .search-bar{
+        width:80%;
+    }
+}
+@media(max-width:480px){
+    .card-header{
+        padding:0px;
+    }
+    .search-bar{
+        width:90%;
+        padding:10px 25px;
+    }
+    .search_icon{
+        top: 10px;
+    }
+    .diamon-heading h2{
+        font-size:30px;
+    }
+    .diamon-heading p{
+        font-size:14px;
+        margin-bottom: 20px;
+    }
+    .filter-section{
+        margin-bottom:20px;
+    }
+    .filter-section .form-control{
+        font-size: 13px;
+    }
+    .product-content h6{
+        font-size:16px;
+    }
+    .product-content ul li{
+        margin-right:10px;
+    }
+    .product-content ul li a{
+        width: 25px;
+        height: 25px;
+        font-size:14px;
+    }
+    .diamond-pagenation{
+        padding-top:20px;
+    }
+    .diamond-pagenation ul li{
+        margin-right:10px;
+        font-size:16px;
+    }
+    .product-name{
+        padding: 5px 10px;
+    }
+    .card-header .form-control{
+        padding:5px 20px;
+    }
+    .btn-link{
+        padding:5px 15px;
+    }
+    .search_icon{
+        font-size:18px;
+    }
+    
+}
